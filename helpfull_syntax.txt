@@ -1,0 +1,11 @@
+PACMAN
+
+# Update/Sync Repository
+sudo pacman -Syu
+
+# Download-Only Packages with Dependencies
+sudo pacman -Sw cheese
+
+# Install Packages Online/Offline
+sudo pacman -S cheese
+sudo pacman -U /var/cache/pacman/pkg/cheese-41.1-2-x86_64.pkg.tar.zst
