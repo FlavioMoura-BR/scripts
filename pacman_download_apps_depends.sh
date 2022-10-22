@@ -4,6 +4,7 @@ sudo pacman -Syu
 
 cd ~
 mkdir ~/Software
+mkdir ~/Software/pacman-db
 
 for i in ;
 
@@ -16,5 +17,7 @@ sudo rm -R /var/cache/pacman/pkg/*
 sleep 5s
 clear
 done
+
+sudo cp -R *.db /var/lib/pacman/sync
 
 sudo chmod -R 777 ~/Software
